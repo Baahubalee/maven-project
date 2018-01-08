@@ -1,0 +1,18 @@
+node {
+      stage('checkout case') { // for display purposes
+      // Get some code from a GitHub repository
+      git 'https://github.com/Baahubalee/maven-project'
+      
+   }
+   stage('Build') {
+      echo 'build executed'
+      
+   }
+   stage('Test execution'){
+       echo 'test executed'
+      
+   }
+   stage('Results') {
+     echo 'result saved'
+   }
+}
